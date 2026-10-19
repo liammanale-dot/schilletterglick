@@ -1,0 +1,858 @@
+[
+  {
+    "id": "charge",
+    "title": "Charge & conductors",
+    "subtitle": "Start with what charges do.",
+    "icon": "±",
+    "color": "#a2b8a1",
+    "source": "Electric Forces, pp. 1–7; Gauss’s Law, pp. 21–25",
+    "priority": "Foundation",
+    "summary": "Understand charge, material behavior, polarization, grounding, and induction before using the equations.",
+    "lessons": [
+      {
+        "id": "charge-sign",
+        "title": "Charge, electrons & quantization",
+        "body": "Protons carry +e and electrons carry −e, with e = 1.602 × 10⁻¹⁹ C taken as a positive magnitude. An ordinary object becomes positive when it loses electrons and negative when it gains them. Its net charge is an integer multiple of e; a neutral object still contains positive and negative charges.",
+        "formula": "q = ne; number of transferred electrons = |q|/e",
+        "trap": "A positive object has an electron deficit; its protons usually have not moved.",
+        "example": {
+          "question": "An initially neutral object loses 2.0 × 10¹⁰ electrons. What is its final charge?",
+          "steps": [
+            "Each electron removed leaves +e of net charge.",
+            "q = (2.0 × 10¹⁰)(1.602 × 10⁻¹⁹ C)."
+          ],
+          "answer": "q = +3.20 × 10⁻⁹ C = +3.20 nC."
+        }
+      },
+      {
+        "id": "charge-conservation",
+        "title": "Charge conservation & contact",
+        "body": "The total charge of an isolated system remains constant when electrons move between its objects. Contact lets charge transfer; equal identical metal spheres far from other charges finish with equal charge after touching and separating. Rubbing transfers electrons according to the materials involved.",
+        "formula": "Q before = Q after",
+        "trap": "Charge is redistributed rather than created, and unequal conductors need not split charge equally.",
+        "example": {
+          "question": "Two identical isolated metal spheres carry +8 nC and −2 nC. They touch and separate. Find each final charge.",
+          "steps": [
+            "Total charge is +8 − 2 = +6 nC.",
+            "Identical spheres share this equally when no other nearby charges disturb them."
+          ],
+          "answer": "Each sphere ends with +3 nC."
+        }
+      },
+      {
+        "id": "charge-materials",
+        "title": "Conductors, insulators & equilibrium",
+        "body": "In a conductor, mobile electrons rapidly rearrange until the electric field inside the conducting material is zero. In an insulator, excess charge can remain where it was placed. Excess charge of an isolated conductor with no charge in a cavity lies on its outer surface; it is uniform on a sphere only when the surroundings preserve spherical symmetry.",
+        "formula": "Electrostatic equilibrium: E inside metal = 0",
+        "trap": "“Inside metal” and “inside a hollow cavity” are different regions; a charge inside a cavity creates a field there.",
+        "example": {
+          "question": "An isolated metal sphere has +6 nC of excess charge. Where is the excess charge, and what is E in the metal?",
+          "steps": [
+            "Mobile charges rearrange until no net force drives them through the metal.",
+            "For an isolated sphere in symmetric surroundings, the excess charge spreads uniformly on the outer surface."
+          ],
+          "answer": "Outer surface; E = 0 everywhere inside the conducting material."
+        }
+      },
+      {
+        "id": "charge-polarization",
+        "title": "Polarization & electroscopes",
+        "body": "A charged object can separate positive and negative charge in a nearby neutral conductor without changing its total charge. Polar molecules can also rotate, and bound charges in insulators can shift slightly. An electroscope’s leaves repel when they acquire the same sign, so a deflection detects a charge effect but does not alone identify its sign.",
+        "formula": "Neutral overall: q positive + q negative = 0",
+        "trap": "A neutral object can be attracted to a charged object because the opposite induced charge is closer.",
+        "example": {
+          "question": "A negative rod approaches a neutral metal can without touching it. Why does the can move toward the rod?",
+          "steps": [
+            "The rod repels the can’s electrons toward its far side.",
+            "The near side becomes positive and attracts the rod more strongly than the far negative side repels it."
+          ],
+          "answer": "Charge separation produces a net attraction; the can remains neutral overall."
+        }
+      },
+      {
+        "id": "charge-induction",
+        "title": "Grounding & charging by induction",
+        "body": "A ground is a large source or sink for electrons that can hold an object near the ground’s potential. To charge by induction, bring a rod near a conductor, connect the conductor to ground, remove the ground while the rod is still nearby, and then remove the rod. This leaves the conductor with charge opposite to the rod’s sign.",
+        "formula": "Induction: nearby negative rod → grounded conductor loses electrons",
+        "trap": "Disconnect the ground first; otherwise the final charge can flow back as the rod is removed.",
+        "example": {
+          "question": "A negative rod is held near a neutral metal sphere. The sphere is grounded, disconnected from ground, and then the rod is removed. What sign remains?",
+          "steps": [
+            "The rod repels some electrons from the sphere into the ground.",
+            "Disconnecting the ground traps the electron deficit.",
+            "Removing the rod lets the remaining positive excess redistribute."
+          ],
+          "answer": "The sphere is positively charged."
+        }
+      }
+    ]
+  },
+  {
+    "id": "forces",
+    "title": "Electric forces",
+    "subtitle": "Draw the forces. Then add vectors.",
+    "icon": "↗",
+    "color": "#edb997",
+    "source": "Electric Forces, pp. 7–16",
+    "priority": "Core exam skill",
+    "summary": "Use Coulomb’s law with a clear free body diagram, correct distances, and signed components.",
+    "lessons": [
+      {
+        "id": "forces-coulomb",
+        "title": "Coulomb’s law & Newton’s third law",
+        "body": "Two point charges exert forces along their connecting line. Like charges repel and unlike charges attract; both forces have the same magnitude and opposite direction even when the charges differ. Use k = 8.99 × 10⁹ N m²/C² and convert all distances to meters.",
+        "formula": "F = k|q₁q₂|/r²; k = 1/(4πε₀)",
+        "trap": "The magnitude is positive; decide the direction from attraction or repulsion.",
+        "example": {
+          "question": "Charges +2.0 μC and −3.0 μC are 0.20 m apart. Find the force magnitude on each.",
+          "steps": [
+            "Convert charges: 2.0 × 10⁻⁶ C and −3.0 × 10⁻⁶ C.",
+            "F = (8.99 × 10⁹)(2.0 × 10⁻⁶)(3.0 × 10⁻⁶)/(0.20)².",
+            "The signs are opposite, so each force points toward the other charge."
+          ],
+          "answer": "1.35 N on each charge, in opposite directions; the interaction is attractive."
+        }
+      },
+      {
+        "id": "forces-vectors",
+        "title": "Superposition & components",
+        "body": "Find every force on the target charge separately, using the distance from that source to the target. Resolve the force arrows into signed x and y components and add components. The final direction must match the signs of the summed components.",
+        "formula": "F net = ΣFᵢ; |F| = √(Fₓ² + Fᵧ²)",
+        "trap": "A diagonal distance is √(Δx² + Δy²), not a side length; do not add force magnitudes directly.",
+        "example": {
+          "question": "A +1.0 μC target is at (0,0). A +2.0 μC charge is at (0.30 m,0) and a −3.0 μC charge at (0,0.40 m). Find the net force.",
+          "steps": [
+            "The positive source repels the target left: Fₓ = −8.99 × 10⁹(2 × 10⁻¹²)/(0.30)² = −0.200 N.",
+            "The negative source attracts the target up: Fᵧ = +8.99 × 10⁹(3 × 10⁻¹²)/(0.40)² = +0.169 N.",
+            "The magnitude is √(0.200² + 0.169²) = 0.261 N."
+          ],
+          "answer": "F = (−0.200 î + 0.169 ĵ) N; 40.2° above the negative x axis."
+        }
+      },
+      {
+        "id": "forces-equilibrium",
+        "title": "Electric force in equilibrium",
+        "body": "Electric forces obey Newton’s laws alongside tension, gravity, and other forces. For identical repelling suspended spheres at angle θ from vertical, horizontal balance gives F electric = T sin θ and vertical balance gives mg = T cos θ. The charge separation comes from the geometry, r = 2L sin θ.",
+        "formula": "F electric = mg tan θ; |q| = 2L sin θ √(mg tan θ/k)",
+        "trap": "The separation is the distance between the charges, not the string length.",
+        "example": {
+          "question": "Two spheres each have mass 0.030 kg and hang on 0.15 m strings from the same point. Each string makes 5.0° with vertical. Find |q|.",
+          "steps": [
+            "r = 2(0.15) sin 5° = 0.0261 m.",
+            "F electric = (0.030)(9.8) tan 5° = 0.0257 N.",
+            "|q| = √(F electric r²/k)."
+          ],
+          "answer": "|q| = 4.42 × 10⁻⁸ C = 44.2 nC; the force balance cannot determine their common sign."
+        }
+      },
+      {
+        "id": "forces-zero",
+        "title": "Where does net force vanish?",
+        "body": "For a nonzero test charge, zero net electric force occurs exactly where the source electric field is zero. First choose a region where the two fields point in opposite directions, then equate their magnitudes. For like charges the finite cancellation point is between them and closer to the smaller charge.",
+        "formula": "k|Q₁|/r₁² = k|Q₂|/r₂²",
+        "trap": "Solving squared magnitudes can produce a point where fields actually reinforce; check the directions.",
+        "example": {
+          "question": "Charges +Q at x = 0 and +4Q at x = 3R are fixed. Where between them is a nonzero test charge in equilibrium?",
+          "steps": [
+            "Between them, the +Q field points right and the +4Q field points left.",
+            "Set Q/x² = 4Q/(3R − x)².",
+            "Use positive distances: 3R − x = 2x, giving x = R."
+          ],
+          "answer": "x = R from +Q, or 2R from +4Q. The result is independent of the test charge’s sign."
+        }
+      }
+    ]
+  },
+  {
+    "id": "fields",
+    "title": "Fields & motion",
+    "subtitle": "Connect invisible fields to real motion.",
+    "icon": "→",
+    "color": "#9db9d5",
+    "source": "Electric Fields, pp. 1–16, 22–24; Electric Potential, pp. 27–30",
+    "priority": "Core exam skill",
+    "summary": "Read field directions, combine point charge fields, understand dipoles, and predict charged particle motion.",
+    "lessons": [
+      {
+        "id": "fields-definition",
+        "title": "Field versus force",
+        "body": "The electric field at a location is the force per unit positive test charge placed there. It depends on the source charges and remains present when the test charge is removed. A positive charge feels force along the field; a negative charge feels force opposite to it.",
+        "formula": "E = F/q; F = qE; units: N/C = V/m",
+        "trap": "Changing the test charge changes its force, not the source field.",
+        "example": {
+          "question": "A uniform electric field is 300 N/C to the right. What force acts on a −2.0 nC particle?",
+          "steps": [
+            "Choose right as +x, so Eₓ = +300 N/C.",
+            "Fₓ = qEₓ = (−2.0 × 10⁻⁹)(300)."
+          ],
+          "answer": "F = −6.0 × 10⁻⁷ î N, or 0.60 μN to the left."
+        }
+      },
+      {
+        "id": "fields-superposition",
+        "title": "Point charge fields & superposition",
+        "body": "A point charge creates a radial electric field that decreases as 1/r². Fields point away from positive sources and toward negative sources. For several sources, draw each field at the observation point and add signed components before multiplying by any test charge.",
+        "formula": "Eᵢ = kqᵢ(r − rᵢ)/|r − rᵢ|³; E net = ΣEᵢ",
+        "trap": "The field arrow is drawn at the observation point, not on the source charge.",
+        "example": {
+          "question": "A +2.0 nC charge is at x = −0.10 m and a −2.0 nC charge at x = +0.10 m. Find E at the origin.",
+          "steps": [
+            "At the origin, the positive charge produces a field to the right.",
+            "The negative charge also produces a field to the right.",
+            "Each magnitude is k(2 × 10⁻⁹)/(0.10)² = 1.798 × 10³ N/C."
+          ],
+          "answer": "E = +3.60 × 10³ î N/C."
+        }
+      },
+      {
+        "id": "fields-lines",
+        "title": "Reading field lines",
+        "body": "A field vector is tangent to a field line and points with the line’s arrow. More densely packed lines indicate a stronger field; lines start on positive charge and end on negative charge or extend to infinity. Electrostatic field lines never cross because the field has only one direction at a point.",
+        "formula": "Closer lines → stronger |E|; tangent → direction of E",
+        "trap": "Field lines show direction, not the exact path of a moving particle with an arbitrary initial velocity.",
+        "example": {
+          "question": "A diagram shows equally spaced straight arrows pointing left. What does it tell you about E and a positive particle released from rest?",
+          "steps": [
+            "Equal spacing and a common direction describe a uniform field.",
+            "The positive particle’s force is qE, so it points left.",
+            "With no other forces, its acceleration is constant to the left."
+          ],
+          "answer": "Uniform leftward E; the positive particle accelerates left at a = qE/m."
+        }
+      },
+      {
+        "id": "fields-dipole",
+        "title": "Dipole moment & dipole field",
+        "body": "An electric dipole consists of equal opposite charges separated by distance s; its moment p points from the negative charge to the positive charge and has magnitude qs. On the perpendicular bisector, the field points opposite to p; on the dipole axis outside the two charges, it points along p. Far from the pair, the dipole field falls as 1/r³ because the leading point charge contributions cancel.",
+        "formula": "p = qs; far axial E = 2kp/r³; far equatorial E = kp/r³ opposite p",
+        "trap": "The far field formulas require r ≫ s; a neutral dipole still creates a nonzero field.",
+        "example": {
+          "question": "A dipole has q = 2.0 nC, separation s = 1.0 mm, and p pointing up. Estimate the field 0.10 m away on the perpendicular bisector.",
+          "steps": [
+            "p = (2.0 × 10⁻⁹)(1.0 × 10⁻³) = 2.0 × 10⁻¹² C m.",
+            "Since r/s = 100, use the far equatorial formula.",
+            "E ≈ kp/r³ = (8.99 × 10⁹)(2.0 × 10⁻¹²)/(0.10)³."
+          ],
+          "answer": "E ≈ 18.0 N/C downward, opposite to p."
+        }
+      },
+      {
+        "id": "fields-acceleration",
+        "title": "Uniform field acceleration & stopping distance",
+        "body": "In a uniform field, a single particle has constant acceleration a = qE/m if other forces are negligible. Choose an axis first so that charge, field, displacement, and velocity signs remain consistent. Use constant acceleration kinematics to find times, speeds, or stopping distances.",
+        "formula": "v² = v₀² + 2aΔx; v = v₀ + at; a = qE/m",
+        "trap": "An electric force can slow a particle if it points opposite the initial velocity; a speed is always nonnegative.",
+        "example": {
+          "question": "A proton travels right at 2.0 × 10⁵ m/s into a uniform field of 1.0 × 10⁴ N/C pointing left. How far does it travel before stopping?",
+          "steps": [
+            "Choose right positive: aₓ = −eE/mₚ = −9.59 × 10¹¹ m/s².",
+            "At the turning point vₓ = 0.",
+            "Δx = −v₀²/(2aₓ) = (2.0 × 10⁵)²/(2 × 9.59 × 10¹¹)."
+          ],
+          "answer": "Stopping distance = 0.0208 m = 2.08 cm; it then accelerates back left."
+        }
+      },
+      {
+        "id": "fields-trajectories",
+        "title": "Two dimensional charged particle motion",
+        "body": "Separate the motion into independent components when a particle enters a uniform field sideways. With E only along y, the x velocity remains constant and the y motion has constant acceleration. Ignoring gravity and edge effects, the trajectory inside the plates is a parabola.",
+        "formula": "t = L/vₓ; Δy = vᵧ₀t + ½(qEᵧ/m)t²",
+        "trap": "An electron curves opposite E; use the time spent inside the field, not the full later flight time.",
+        "example": {
+          "question": "An electron enters horizontally at 2.0 × 10⁶ m/s through a region 2.0 cm long. E = 100 N/C upward and vᵧ₀ = 0. Find its vertical deflection.",
+          "steps": [
+            "Time in field: t = 0.020/(2.0 × 10⁶) = 1.0 × 10⁻⁸ s.",
+            "aᵧ = −eE/mₑ = −1.76 × 10¹³ m/s².",
+            "Δy = ½aᵧt² = −8.79 × 10⁻⁴ m."
+          ],
+          "answer": "Δy = −0.879 mm: the electron deflects downward."
+        }
+      },
+      {
+        "id": "fields-torque",
+        "title": "Dipole torque in a uniform field",
+        "body": "The two charges of a dipole in a uniform external field feel equal opposite forces, so the net force is zero. Unless aligned, those forces create a torque that turns p toward E. The right hand rule for p × E gives the torque direction.",
+        "formula": "τ = p × E; |τ| = pE sin θ",
+        "trap": "Zero net force does not imply zero torque; θ is the angle between p and E.",
+        "example": {
+          "question": "A dipole with p = 3.0 × 10⁻⁸ C m points up in a field of 200 N/C pointing right. Find its torque.",
+          "steps": [
+            "The angle is 90°, so |τ| = pE = 6.0 × 10⁻⁶ N m.",
+            "Use coordinates: p is +y and E is +x.",
+            "ĵ × î = −k̂, so the torque points into the page."
+          ],
+          "answer": "τ = −6.0 × 10⁻⁶ k̂ N m; the dipole initially rotates clockwise."
+        }
+      }
+    ]
+  },
+  {
+    "id": "distributions",
+    "title": "Continuous charge",
+    "subtitle": "Build fields from rods, rings, and planes.",
+    "icon": "∫",
+    "color": "#c3afd7",
+    "source": "Electric Fields, pp. 16–22; Electric Potential, pp. 19–21",
+    "priority": "Core exam skill",
+    "summary": "Choose the charge density, identify symmetry, and integrate the components that survive.",
+    "lessons": [
+      {
+        "id": "distributions-density",
+        "title": "Charge density & field integrals",
+        "body": "Treat a spread out charge distribution as small point charges dq and add their field contributions with an integral. Write dq in terms of the appropriate length, area, or volume element and include the direction or component factor. Symmetry can cancel components before you integrate.",
+        "formula": "dq = λ dℓ = σ dA = ρ dV; E = ∫ k dq r̂/r²",
+        "trap": "λ is in C/m, σ in C/m², and ρ in C/m³; they multiply different geometric measures.",
+        "example": {
+          "question": "A uniformly charged rod is 0.40 m long and has Q = 8.0 nC. How much charge lies in a 1.0 cm piece?",
+          "steps": [
+            "λ = Q/L = 8.0 nC/0.40 m = 20 nC/m.",
+            "q piece = λΔℓ = (20 nC/m)(0.010 m)."
+          ],
+          "answer": "0.20 nC = 2.0 × 10⁻¹⁰ C."
+        }
+      },
+      {
+        "id": "distributions-rod",
+        "title": "Finite rod on its axis",
+        "body": "For a uniform rod on the positive x axis from x = a to x = a + L, every positive dq produces a field to the left at the origin. Its distance to the origin varies, so integrate kλ dx/x² from a to a + L. A distant finite rod behaves approximately like a point charge with its total charge.",
+        "formula": "Eₓ(0) = −kλ[1/a − 1/(a + L)] = −kQ/[a(a + L)]",
+        "trap": "This is the field on the rod’s extension; it is not the field beside an infinite line.",
+        "example": {
+          "question": "A +6.0 nC rod extends from x = 0.10 m to x = 0.30 m. Find E at the origin.",
+          "steps": [
+            "a = 0.10 m and L = 0.20 m.",
+            "Eₓ = −kQ/[a(a + L)].",
+            "Eₓ = −(8.99 × 10⁹)(6.0 × 10⁻⁹)/[(0.10)(0.30)]."
+          ],
+          "answer": "E = −1.80 × 10³ î N/C, pointing away from the positive rod."
+        }
+      },
+      {
+        "id": "distributions-ring",
+        "title": "Uniform ring on its axis",
+        "body": "At a point on a uniformly charged ring’s axis, all transverse field components cancel in opposite pairs. Every dq is the same distance √(z² + R²) away, but only its axial component survives. The field vanishes at the center and approaches the field of total charge Q when |z| ≫ R.",
+        "formula": "E_z = kQz/(z² + R²)³ᐟ²; V = kQ/√(z² + R²)",
+        "trap": "E = 0 at the center does not mean V = 0 there.",
+        "example": {
+          "question": "A ring has Q = +10 nC and R = 0.10 m. Find E and V at its center, taking V = 0 at infinity.",
+          "steps": [
+            "Set z = 0 in the axial field: the numerator is zero.",
+            "At the center, V = kQ/R = (8.99 × 10⁹)(10 × 10⁻⁹)/0.10."
+          ],
+          "answer": "E = 0; V = +899 V."
+        }
+      },
+      {
+        "id": "distributions-disk",
+        "title": "Uniform disk & infinite plane",
+        "body": "A charged disk can be assembled from concentric rings, each contributing along the axis. For z > 0, the axial field formula below applies with signed σ; reverse the field side when observing below the disk. Letting R grow without bound gives a sheet field independent of distance.",
+        "formula": "E_z = [σ/(2ε₀)](1 − z/√(z² + R²)), z > 0; |E sheet| = |σ|/(2ε₀)",
+        "trap": "The disk formula written for z > 0 cannot be used unchanged for negative z.",
+        "example": {
+          "question": "An infinite insulating plane has σ = +8.85 nC/m². Find the field magnitude on each side.",
+          "steps": [
+            "Use |E| = |σ|/(2ε₀).",
+            "E = (8.85 × 10⁻⁹)/(2 × 8.85 × 10⁻¹²).",
+            "Positive σ gives fields pointing away from the plane on both sides."
+          ],
+          "answer": "500 N/C on each side, directed away from the plane."
+        }
+      },
+      {
+        "id": "distributions-plates",
+        "title": "Two sheets & a parallel plate field",
+        "body": "Use superposition for two large plates with equal opposite surface charge densities. Their fields add between the plates and cancel outside in the ideal infinite sheet limit. A real parallel plate capacitor approximates this result away from the edges when plate spacing is small compared with plate dimensions.",
+        "formula": "E between = σ/ε₀ = Q/(Aε₀); direction: + plate → − plate",
+        "trap": "Q is the magnitude on one plate and A is the area of one plate.",
+        "example": {
+          "question": "Two large plates carry ±17.7 nC/m². What is E between the plates and outside them?",
+          "steps": [
+            "Each isolated sheet contributes 17.7 × 10⁻⁹/(2ε₀) = 1000 N/C.",
+            "Between the plates both fields point from positive to negative, giving 2000 N/C.",
+            "Outside the ideal plates the equal opposite contributions cancel."
+          ],
+          "answer": "Inside: 2.00 × 10³ N/C from + to −. Outside: approximately zero away from edges."
+        }
+      }
+    ]
+  },
+  {
+    "id": "gauss",
+    "title": "Flux & Gauss’s law",
+    "subtitle": "Use symmetry to solve whole regions.",
+    "icon": "◎",
+    "color": "#e8cb87",
+    "source": "Gauss’s Law, pp. 1–25; Exam 2 Review Problems, pp. 1–5",
+    "priority": "Core exam skill",
+    "summary": "Connect flux to enclosed charge, select a useful Gaussian surface, and distinguish conducting material from charged insulators.",
+    "lessons": [
+      {
+        "id": "gauss-flux",
+        "title": "Electric flux & area vectors",
+        "body": "Flux measures the electric field through a surface, using an area vector perpendicular to that surface. For a uniform field through a flat surface, Φ = EA cos θ, where θ is measured from the area normal. Closed surfaces always use outward normals; outward flux is positive and inward flux is negative.",
+        "formula": "Φ = ∫E · dA; uniform flat surface: Φ = EA cos θ",
+        "trap": "If the angle is given relative to the plane, convert it to the angle with the normal.",
+        "example": {
+          "question": "A 0.020 m² surface lies in a 300 N/C field. The field makes 60° with its chosen area normal. Find the flux.",
+          "steps": [
+            "Use θ = 60° with the normal.",
+            "Φ = (300)(0.020) cos 60°."
+          ],
+          "answer": "Φ = +3.0 N m²/C. Reversing the area normal changes the sign."
+        }
+      },
+      {
+        "id": "gauss-law",
+        "title": "Enclosed charge & zero flux",
+        "body": "Gauss’s law gives the total flux through any closed surface as the net enclosed charge divided by ε₀. External charges can create a field on the surface but contribute zero net flux through it. Zero enclosed charge means zero net flux; it does not require the field to vanish at every point.",
+        "formula": "∮E · dA = Q enclosed/ε₀",
+        "trap": "An enclosed dipole has zero total flux but usually has a nonzero field on the surface.",
+        "example": {
+          "question": "A closed surface encloses +5 nC and −2 nC. A +100 nC charge lies outside. What is the net flux?",
+          "steps": [
+            "Q enclosed = +5 − 2 = +3 nC.",
+            "Ignore the external charge when calculating total flux.",
+            "Φ = 3.0 × 10⁻⁹/(8.85 × 10⁻¹²)."
+          ],
+          "answer": "Φ = +339 N m²/C."
+        }
+      },
+      {
+        "id": "gauss-symmetry",
+        "title": "Choose a Gaussian surface",
+        "body": "Gauss’s law is always true, but extracting E directly requires enough symmetry to know its direction and where its magnitude is constant. Use a centered sphere for spherical symmetry, a coaxial cylinder for an infinite line or cylinder, and a pillbox for an infinite plane. For a cylindrical sidewall the endcaps have zero flux when the field is radial.",
+        "formula": "Sphere: Φ = E4πr²; cylinder wall: Φ = E2πrL; symmetric pillbox: Φ = 2EA",
+        "trap": "Choosing a sphere around arbitrary charges does not make E constant on that sphere.",
+        "example": {
+          "question": "For an infinite line with λ = +2.0 nC/m, find E at radius 0.20 m.",
+          "steps": [
+            "Use a coaxial Gaussian cylinder of any length L.",
+            "E(2πrL) = λL/ε₀; the endcaps contribute zero.",
+            "E = λ/(2πε₀r)."
+          ],
+          "answer": "E = 180 N/C, radially outward. The field falls as 1/r."
+        }
+      },
+      {
+        "id": "gauss-spheres",
+        "title": "Solid insulating sphere versus metal sphere",
+        "body": "A uniform insulating sphere encloses only a fraction of its total charge at an interior radius r. Its field increases linearly from zero at the center, then falls as 1/r² outside. For an isolated charged conducting sphere, the field is zero throughout its metal interior and the external field is kQ/r².",
+        "formula": "Uniform insulator: Eᵣ = kQr/R³ (r < R), kQ/r² (r ≥ R); metal: E = 0 (r < R)",
+        "trap": "The point charge formula describes a spherical distribution outside it; it generally fails inside the charged material.",
+        "example": {
+          "question": "An insulating sphere has Q = +8.0 nC and R = 0.20 m. Find E at r = 0.10 m. What if it were conducting?",
+          "steps": [
+            "For the insulator, Eᵣ = kQr/R³.",
+            "Eᵣ = (8.99 × 10⁹)(8 × 10⁻⁹)(0.10)/(0.20)³ = 899 N/C.",
+            "A conducting sphere has no electrostatic field inside its material."
+          ],
+          "answer": "Insulator: 899 N/C outward. Conductor: E = 0 at that interior point."
+        }
+      },
+      {
+        "id": "gauss-hollow-sphere",
+        "title": "Insulating sphere with a concentric hole",
+        "body": "For uniform volume density ρ between inner radius a and outer radius b, solve three regions separately. Inside the hole no charge is enclosed and spherical symmetry gives E = 0. Within the charged material subtract the hole’s volume; outside, enclose all charged material and keep the Gaussian radius r in the denominator.",
+        "formula": "Eᵣ = 0 (r < a); ρ(r³ − a³)/(3ε₀r²) (a < r < b); ρ(b³ − a³)/(3ε₀r²) (r > b)",
+        "trap": "Subtract the hole volume, not its area; outside the material, Q enclosed stops growing with r.",
+        "example": {
+          "question": "A spherical insulator has ρ = 8.85 nC/m³, a = 0.10 m, b = 0.20 m. Find E at r = 0.15 m.",
+          "steps": [
+            "The point lies in the material, so Q enclosed = ρ(4π/3)(r³ − a³).",
+            "Eᵣ = (ρ/ε₀)(r³ − a³)/(3r²).",
+            "Eᵣ = 1000(0.15³ − 0.10³)/[3(0.15)²]."
+          ],
+          "answer": "E = 35.2 N/C outward. This matches the hollow sphere review problem method."
+        }
+      },
+      {
+        "id": "gauss-cylinders",
+        "title": "Long charged cylinders & cylindrical holes",
+        "body": "For a very long cylinder, neglect end effects and use a coaxial Gaussian cylinder. A uniform solid insulator has Eᵣ = ρr/(2ε₀) inside and Eᵣ = ρb²/(2ε₀r) outside. With a concentric empty hole of radius a, subtract a² from the enclosed cross sectional area; the field is zero in the hole by symmetry.",
+        "formula": "Hollow cylinder: Eᵣ = 0 (r < a); ρ(r² − a²)/(2ε₀r) (a < r < b); ρ(b² − a²)/(2ε₀r) (r > b)",
+        "trap": "For cylindrical volume, subtract πa²L from πr²L; do not use spherical r³ factors.",
+        "example": {
+          "question": "A long insulating cylinder has ρ = 8.85 nC/m³, a = 0.020 m, b = 0.040 m. Find E at r = 0.060 m.",
+          "steps": [
+            "The point is outside, so Q enclosed = ρπL(b² − a²).",
+            "E(2πrL) = Q enclosed/ε₀.",
+            "E = 1000[(0.040)² − (0.020)²]/[2(0.060)]."
+          ],
+          "answer": "E = 10.0 N/C outward; the outside field decreases as 1/r."
+        }
+      },
+      {
+        "id": "gauss-conductors",
+        "title": "Conducting surfaces, cavities & shielding",
+        "body": "At electrostatic equilibrium E is zero in the metal and the field just outside its surface is perpendicular with E normal = σ/ε₀. A small pillbox has flux through only its outer face, unlike an isolated sheet’s two faces. A charge q inside a cavity induces −q on the inner surface; an initially neutral isolated conductor then carries +q on its outer surface. An empty closed conducting cavity shields static external electric fields.",
+        "formula": "E outside = (σ/ε₀)n̂; q inner surface = −q cavity; q outer = Q conductor + q cavity",
+        "trap": "Zero field inside the metal does not imply zero field inside a cavity containing a charge; a nonspherical surface need not have uniform σ.",
+        "example": {
+          "question": "A neutral isolated metal shell encloses a charge −3.0 nC inside its cavity. Find inner and outer surface charges and the field inside the metal.",
+          "steps": [
+            "Zero field in the metal requires total enclosed charge zero for a Gaussian surface within the metal.",
+            "The inner surface must carry +3.0 nC to cancel the cavity’s −3.0 nC in that sum.",
+            "The shell is neutral overall, so its outer surface carries −3.0 nC."
+          ],
+          "answer": "Inner: +3.0 nC. Outer: −3.0 nC. E in metal: 0. The cavity field is generally nonzero."
+        }
+      }
+    ]
+  },
+  {
+    "id": "potential",
+    "title": "Electric potential",
+    "subtitle": "Turn fields into an energy landscape.",
+    "icon": "V",
+    "color": "#accfce",
+    "source": "Electric Potential, pp. 9–30; Exam 2 Review Problems, pp. 6–7, 11–12",
+    "priority": "Core exam skill",
+    "summary": "Add scalar potentials, track reference choices, read equipotentials, and differentiate V to recover the field.",
+    "lessons": [
+      {
+        "id": "potential-definition",
+        "title": "Potential, voltage & reference choice",
+        "body": "Electric potential V is potential energy per unit test charge, measured in volts or J/C. Potential difference is ΔV = V final − V initial and is independent of an arbitrary constant added to all potentials. The source determines V, while U = qV also depends on the test charge’s sign.",
+        "formula": "V = U/q; ΔU = qΔV; 1 V = 1 J/C",
+        "trap": "A negative test charge reverses the sign relation between changes in potential and changes in potential energy.",
+        "example": {
+          "question": "A −2.0 μC charge moves from 5 V to 12 V. Find ΔV and ΔU.",
+          "steps": [
+            "ΔV = 12 − 5 = +7 V.",
+            "ΔU = qΔV = (−2.0 × 10⁻⁶)(+7)."
+          ],
+          "answer": "ΔV = +7 V; ΔU = −14 μJ. The negative charge loses potential energy while moving to higher potential."
+        }
+      },
+      {
+        "id": "potential-sum",
+        "title": "Point charge potentials & zero potential",
+        "body": "With zero potential chosen at infinity for localized charges, each point charge contributes kq/r with its sign. Potential is a scalar, so add these contributions directly. Zero potential and zero electric field are separate conditions; one can occur without the other.",
+        "formula": "V = Σkqᵢ/rᵢ; V = 0 requires signed contributions to cancel",
+        "trap": "Distances are positive; keep the charge sign in kq/r, and reject roots that violate the original equation.",
+        "example": {
+          "question": "A +2.0 nC charge sits at x = 0 and a −8.0 nC charge at x = 0.60 m. Where between them is V = 0?",
+          "steps": [
+            "For 0 < x < 0.60, V/k = 2/x − 8/(0.60 − x), with charges in nC.",
+            "Set 2/x = 8/(0.60 − x).",
+            "2(0.60 − x) = 8x, so x = 0.12 m."
+          ],
+          "answer": "The between-charge zero is x = 0.12 m from +2.0 nC. There is also an outside zero at x = −0.20 m."
+        }
+      },
+      {
+        "id": "potential-integral",
+        "title": "Voltage from a field",
+        "body": "Potential decreases in the direction of the electric field. Integrate the field component along the displacement to obtain a potential difference; electrostatic path independence means any convenient path between the same endpoints works. For a uniform field along +x, ΔV = −EₓΔx; the positive plate-to-negative plate voltage magnitude is Ed.",
+        "formula": "V_B − V_A = −∫ from A to B E · ds; uniform field: ΔV = −E · Δr",
+        "trap": "The sign depends on endpoint order and displacement direction; Ed by itself is a magnitude.",
+        "example": {
+          "question": "A uniform E = (6 î + 8 ĵ) N/C fills a region. Move from (0,0) to (3 m,0). Find ΔV.",
+          "steps": [
+            "The displacement is Δr = 3 î m.",
+            "E · Δr = 6(3) + 8(0) = 18 V.",
+            "ΔV = −E · Δr."
+          ],
+          "answer": "V final − V initial = −18 V. The y field does not contribute to this horizontal displacement."
+        }
+      },
+      {
+        "id": "potential-gradient",
+        "title": "Field from a potential function or graph",
+        "body": "The electric field is the negative gradient of the full potential function. Differentiate with respect to each coordinate while holding the others constant; on a one dimensional V versus x graph, Eₓ is the negative slope. A potential specified only along an axis gives the along-axis field component; symmetry is needed to conclude the other components vanish.",
+        "formula": "E = −∇V = −(∂V/∂x)î − (∂V/∂y)ĵ − (∂V/∂z)k̂",
+        "trap": "A positive potential slope means a negative field component, and V = 0 does not imply zero slope.",
+        "example": {
+          "question": "A potential is V(x,y,z) = 3x − 4yz, with coordinates in meters and coefficients in consistent SI units. Find E at y = 2 m, z = 1 m.",
+          "steps": [
+            "Eₓ = −∂V/∂x = −3 N/C.",
+            "Eᵧ = −∂V/∂y = +4z = +4 N/C.",
+            "E_z = −∂V/∂z = +4y = +8 N/C."
+          ],
+          "answer": "E = (−3 î + 4 ĵ + 8 k̂) N/C. For a V(x) plot, use the same negative-slope rule."
+        }
+      },
+      {
+        "id": "potential-equipotentials",
+        "title": "Equipotential surfaces",
+        "body": "All points on an equipotential surface have the same V, so moving a charge along it changes no electric potential energy. Electric fields cross equipotential surfaces perpendicularly and point toward decreasing V. Closer spacing of surfaces drawn for equal voltage increments indicates a stronger field.",
+        "formula": "Along an equipotential: ΔV = 0; locally |E| ≈ |ΔV|/Δs normal",
+        "trap": "Equal voltage spacing is essential before inferring field strength from the physical spacing of contour lines.",
+        "example": {
+          "question": "Two equipotential surfaces labeled 20 V and 10 V are 2.0 cm apart locally along their normal. Estimate E.",
+          "steps": [
+            "The potential changes by −10 V toward the 10 V surface.",
+            "|E| ≈ 10/0.020 = 500 V/m.",
+            "The field points from the higher potential surface to the lower potential surface."
+          ],
+          "answer": "Approximately 500 N/C toward the 10 V surface; electric work is zero for motion along either surface."
+        }
+      },
+      {
+        "id": "potential-continuous",
+        "title": "Continuous charge potential, rings & dipoles",
+        "body": "For a continuous localized charge distribution, add scalar contributions dV = k dq/r without a vector component factor. A ring’s on-axis potential has the same distance for every dq, so the integral reduces directly to total charge. A dipole’s potential cancels on its perpendicular bisector and, on its axis beyond +q, equals kqs/(x² − s²/4) when +q is at x = s/2.",
+        "formula": "V = ∫k dq/r; V ring = kQ/√(z² + R²); far dipole V ≈ kp cos θ/r²",
+        "trap": "Zero dipole potential on the perpendicular bisector does not imply zero field there.",
+        "example": {
+          "question": "A +10 nC ring has R = 0.030 m. Find V at z = 0.040 m, with V infinity = 0.",
+          "steps": [
+            "Every ring element lies r = √(0.030² + 0.040²) = 0.050 m from the point.",
+            "V = kQ/r.",
+            "V = (8.99 × 10⁹)(10 × 10⁻⁹)/0.050."
+          ],
+          "answer": "V = +1.80 × 10³ V. Differentiating this on-axis V with respect to z gives E_z."
+        }
+      },
+      {
+        "id": "potential-conductor",
+        "title": "Potential of a conducting sphere",
+        "body": "A conductor in electrostatic equilibrium is one equipotential throughout its connected metal, because E = 0 inside and no tangential field exists on its surface. For an isolated sphere of radius R and charge Q, the outside potential is kQ/r and the interior potential remains kQ/R. The potential is continuous at the surface even though the field changes there.",
+        "formula": "V(r) = kQ/R for r ≤ R; V(r) = kQ/r for r ≥ R",
+        "trap": "Zero electric field inside the metal means constant potential, not necessarily zero potential.",
+        "example": {
+          "question": "An isolated conducting sphere has R = 0.10 m and Q = +2.0 nC. Find V at r = 0.050 m and r = 0.20 m.",
+          "steps": [
+            "The first point is inside: V = kQ/R = 179.8 V.",
+            "The second is outside: V = kQ/r = 89.9 V."
+          ],
+          "answer": "Inside point: +180 V. Outside point: +89.9 V. E inside the metal is zero."
+        }
+      }
+    ]
+  },
+  {
+    "id": "energy",
+    "title": "Energy & work",
+    "subtitle": "Use energy when the force changes.",
+    "icon": "U",
+    "color": "#d7a1a4",
+    "source": "Electric Fields, pp. 11–13; Electric Potential, pp. 1–9, 18–19; Exam 2 Review Problems, pp. 7–8",
+    "priority": "Core exam skill",
+    "summary": "Track signed potential energy, count charge pairs once, and turn energy changes into speeds or turning points.",
+    "lessons": [
+      {
+        "id": "energy-work",
+        "title": "Electric work & kinetic energy",
+        "body": "The electrostatic force is conservative, so its work is minus the change in potential energy. If it is the only force doing work on a particle, the same work equals its change in kinetic energy. External work for a slow controlled move is +ΔU when kinetic energy stays unchanged.",
+        "formula": "W electric = −ΔU = −qΔV; ΔK = W net",
+        "trap": "Do not use W = qΔV for electric work; keep the minus sign and the particle’s signed q.",
+        "example": {
+          "question": "A +3.0 μC particle moves from 10 V to 4 V with only the electric force doing work. Find ΔU and ΔK.",
+          "steps": [
+            "ΔV = 4 − 10 = −6 V.",
+            "ΔU = qΔV = (3.0 μC)(−6 V) = −18 μJ.",
+            "ΔK = −ΔU."
+          ],
+          "answer": "The potential energy decreases by 18 μJ and kinetic energy increases by 18 μJ."
+        }
+      },
+      {
+        "id": "energy-pairs",
+        "title": "Potential energy of a charge system",
+        "body": "The interaction energy of two point charges is kq₁q₂/r when zero is chosen at infinite separation. For several charges, sum every distinct pair once, preserving charge signs. Positive interaction energy corresponds to like-charge repulsion and negative interaction energy to opposite-charge attraction relative to that reference.",
+        "formula": "U = Σ over i<j kqᵢqⱼ/rᵢⱼ",
+        "trap": "Summing qᵢVᵢ over all charges without the factor ½ counts each pair twice.",
+        "example": {
+          "question": "Three identical +1.0 nC charges lie at the corners of an equilateral triangle of side 0.10 m. Find their total potential energy.",
+          "steps": [
+            "There are three distinct interacting pairs.",
+            "Each contributes kq²/r = (8.99 × 10⁹)(10⁻⁹)²/0.10 = 8.99 × 10⁻⁸ J.",
+            "Multiply by three."
+          ],
+          "answer": "U = +2.70 × 10⁻⁷ J = +0.270 μJ."
+        }
+      },
+      {
+        "id": "energy-speed",
+        "title": "Particle speeds & turning points",
+        "body": "Use K initial + U initial = K final + U final when only conservative forces act. For motion in a potential supplied by fixed sources, U = qV and ½m(v final² − v initial²) = −qΔV. A turning point occurs when the relevant kinetic energy reaches zero; an algebraic negative v² means the proposed location is inaccessible with that starting energy.",
+        "formula": "v final² = v initial² − 2qΔV/m",
+        "trap": "Fixed source-source energies cancel between initial and final states; include all terms that actually change.",
+        "example": {
+          "question": "A proton starts from rest at 17 V and moves to 6 V. Find its speed, ignoring other forces.",
+          "steps": [
+            "ΔV = 6 − 17 = −11 V.",
+            "K final = −eΔV = 11(1.602 × 10⁻¹⁹) = 1.762 × 10⁻¹⁸ J.",
+            "v = √(2K final/mₚ), using mₚ = 1.67 × 10⁻²⁷ kg."
+          ],
+          "answer": "v = 4.59 × 10⁴ m/s. The positive proton speeds up toward lower potential."
+        }
+      },
+      {
+        "id": "energy-spring",
+        "title": "Electric energy plus spring energy",
+        "body": "When a charged particle is attached to a spring, the potential energy includes both ½Kx² and the signed electric interaction energy. Use x for spring stretch relative to natural length and a separate geometric distance r for charge separation. Write the initial and final geometry explicitly before substituting into energy conservation.",
+        "formula": "U total = ½Kx² + kq₁q₂/r; K_i + U_i = K_f + U_f",
+        "trap": "Spring displacement and charge separation usually differ; mixing them gives the wrong electric energy.",
+        "example": {
+          "question": "A 1.0 kg particle +q is released from rest with spring stretch 0.50 m. K = 24 N/m and q = 1.0 × 10⁻⁵ C. A fixed −q is initially 1.0 m away and 0.50 m away when the spring reaches x = 0. Use k = 1.0 × 10¹⁰. Find the speed there.",
+          "steps": [
+            "Initial spring energy = ½(24)(0.50)² = 3 J.",
+            "Initial electric energy = −kq²/1.0 = −1 J, so U_i = 2 J.",
+            "Final spring energy is 0 and final electric energy is −kq²/0.50 = −2 J.",
+            "K_f = U_i − U_f = 4 J, so v = √(2 × 4/1.0)."
+          ],
+          "answer": "v = √8 m/s = 2.83 m/s, matching the review problem energy structure."
+        }
+      },
+      {
+        "id": "energy-dipole",
+        "title": "Dipole potential energy & oscillation",
+        "body": "A dipole in a uniform external field has potential energy −pE cos θ, with minimum energy when p aligns with E. If released without damping, it can rotate through alignment and oscillate; the small-angle limit gives simple harmonic motion. At turning angles its rotational kinetic energy is zero, and the total mechanical energy stays constant.",
+        "formula": "U dipole = −p · E = −pE cos θ; K rotational = E total − U",
+        "trap": "Alignment has zero torque and minimum U; anti-alignment also has zero torque but is unstable.",
+        "example": {
+          "question": "A dipole has pE = 2.0 μJ and is released from rest at θ = 60°. Find its total energy and kinetic energy at θ = 0°.",
+          "steps": [
+            "At release, E total = U(60°) = −(2.0 μJ) cos 60° = −1.0 μJ.",
+            "At alignment, U(0°) = −2.0 μJ.",
+            "K = E total − U = −1.0 − (−2.0) μJ."
+          ],
+          "answer": "Total energy = −1.0 μJ; kinetic energy at alignment = +1.0 μJ."
+        }
+      },
+      {
+        "id": "energy-electronvolt",
+        "title": "Electron volts & energy units",
+        "body": "An electron volt is an energy unit equal to the energy gain of a particle with charge magnitude e across a favorable voltage magnitude of 1 V. Multiply an energy in eV by 1.602 × 10⁻¹⁹ to convert to joules. Use ΔK = −qΔV to decide whether the particle gains or loses that energy.",
+        "formula": "1 eV = 1.602 × 10⁻¹⁹ J",
+        "trap": "eV is an energy unit; volts are potential difference, and q may be more than one elementary charge.",
+        "example": {
+          "question": "An electron accelerates from rest through a potential increase of +100 V. Find its kinetic energy in eV and joules.",
+          "steps": [
+            "For an electron, q = −e, so ΔK = −(−e)(100 V) = 100 eV.",
+            "Convert: 100 × 1.602 × 10⁻¹⁹ J."
+          ],
+          "answer": "K = 100 eV = 1.602 × 10⁻¹⁷ J; its energy increases while it moves to higher potential."
+        }
+      }
+    ]
+  },
+  {
+    "id": "capacitors",
+    "title": "Capacitors & batteries",
+    "subtitle": "Find charge, voltage, and stored energy.",
+    "icon": "Ⅱ",
+    "color": "#b2bce8",
+    "source": "Capacitors and Batteries, pp. 1–15; Electric Potential, pp. 14–15; Exam 2 Review Problems, pp. 8–11",
+    "priority": "Core exam skill",
+    "summary": "Reduce capacitor networks, reconstruct each capacitor’s values, and decide what remains fixed when geometry or dielectrics change.",
+    "lessons": [
+      {
+        "id": "capacitors-definition",
+        "title": "Capacitance, plates & batteries",
+        "body": "Capacitance measures how much charge magnitude Q a capacitor stores on either plate per voltage difference magnitude. An ideal battery maintains a fixed potential difference, and ideal connecting wires have a single potential at electrostatic equilibrium. A vacuum parallel plate capacitor has C = ε₀A/d, so larger plates and smaller spacing increase capacitance.",
+        "formula": "Q = CΔV; C = ε₀A/d; 1 F = 1 C/V",
+        "trap": "The capacitor has +Q and −Q on its plates; Q does not mean their algebraic sum, which is zero.",
+        "example": {
+          "question": "A vacuum capacitor has A = 0.020 m² and d = 1.0 mm and is connected to 12 V. Find C and Q.",
+          "steps": [
+            "C = (8.85 × 10⁻¹²)(0.020)/(0.0010) = 1.77 × 10⁻¹⁰ F.",
+            "Q = CΔV = (1.77 × 10⁻¹⁰)(12)."
+          ],
+          "answer": "C = 177 pF; plate charges are ±2.12 nC."
+        }
+      },
+      {
+        "id": "capacitors-spherical",
+        "title": "Spherical capacitors",
+        "body": "For concentric conducting spheres with radii a < b, the field in the gap is the field of the enclosed inner charge. Integrating that radial field gives the voltage magnitude kQ(1/a − 1/b), then C = Q/ΔV. Capacitance depends on geometry rather than the amount of charge placed on the conductors.",
+        "formula": "C = 4πε₀ab/(b − a); isolated sphere limit: C = 4πε₀a",
+        "trap": "Use the inner and outer surfaces bounding the gap; both radii must be in meters.",
+        "example": {
+          "question": "A vacuum spherical capacitor has a = 0.020 m and b = 0.030 m. Find C.",
+          "steps": [
+            "ab/(b − a) = (0.020)(0.030)/(0.010) = 0.060 m.",
+            "C = (4πε₀)(0.060) = 0.060/k."
+          ],
+          "answer": "C = 6.67 × 10⁻¹² F = 6.67 pF."
+        }
+      },
+      {
+        "id": "capacitors-parallel",
+        "title": "Parallel capacitors & circuit nodes",
+        "body": "Capacitors are parallel when both ends connect to the same two conducting nodes, regardless of how the diagram is drawn. They share the same voltage and their stored charge magnitudes add to give the equivalent bank charge. Follow each wire without crossing a capacitor to identify a node.",
+        "formula": "C equivalent = C₁ + C₂ + …; ΔV₁ = ΔV₂; Q total = ΣQᵢ",
+        "trap": "Two capacitors drawn next to each other are not necessarily parallel; both endpoint nodes must match.",
+        "example": {
+          "question": "Capacitors 2.0 μF and 3.0 μF are connected in parallel across 10 V. Find C equivalent and each charge.",
+          "steps": [
+            "C equivalent = 2.0 + 3.0 = 5.0 μF.",
+            "Both capacitors have 10 V across them.",
+            "Q₁ = (2.0 μF)(10 V) = 20 μC; Q₂ = 30 μC."
+          ],
+          "answer": "C equivalent = 5.0 μF; Q₁ = 20 μC, Q₂ = 30 μC; Q total = 50 μC."
+        }
+      },
+      {
+        "id": "capacitors-series",
+        "title": "Series capacitors",
+        "body": "Capacitors in a simple series chain share the same charge magnitude when the intermediate conducting nodes were initially neutral. Their voltage differences add to the battery voltage, so the smaller capacitance takes the larger voltage. The series equivalent capacitance is smaller than each individual capacitance.",
+        "formula": "1/C equivalent = 1/C₁ + 1/C₂ + …; Q₁ = Q₂; ΔV total = ΣΔVᵢ",
+        "trap": "Series equality applies to charge magnitudes, not voltage; intermediate net node charge assumptions matter.",
+        "example": {
+          "question": "A 2.0 μF capacitor and 3.0 μF capacitor are in series across 10 V. Find C equivalent, Q, and the individual voltages.",
+          "steps": [
+            "C equivalent = [(1/2.0) + (1/3.0)]⁻¹ μF = 1.20 μF.",
+            "Q = C equivalent(10 V) = 12 μC on each capacitor.",
+            "ΔV₁ = 12/2 = 6 V; ΔV₂ = 12/3 = 4 V."
+          ],
+          "answer": "C equivalent = 1.20 μF; each Q = 12 μC; voltages are 6 V and 4 V."
+        }
+      },
+      {
+        "id": "capacitors-mixed",
+        "title": "Mixed networks: reduce & reconstruct",
+        "body": "Simplify a clear parallel or series bank to one equivalent capacitor, and repeat until the full circuit is reduced. Use the battery voltage to get the equivalent charge, then reverse the simplification one bank at a time. Carry equal voltage into parallel branches and equal charge into series elements, using Q = CΔV at every step.",
+        "formula": "Reduce → total Q = C equivalentΔV battery → reconstruct each bank",
+        "trap": "A bank voltage or bank charge is not automatically the battery voltage or the charge on every individual capacitor.",
+        "example": {
+          "question": "A 3.0 μF capacitor is in series with a parallel bank of 5.0 μF and 1.0 μF, across 12 V. Find all charges and voltages.",
+          "steps": [
+            "Parallel bank: C₂₃ = 5 + 1 = 6 μF.",
+            "Series equivalent: C equivalent = [(1/3) + (1/6)]⁻¹ = 2 μF.",
+            "Total charge = (2 μF)(12 V) = 24 μC. Therefore Q₁ = 24 μC and ΔV₁ = 24/3 = 8 V.",
+            "Bank voltage = 12 − 8 = 4 V, shared by both parallel capacitors.",
+            "Q₂ = (5 μF)(4 V) = 20 μC; Q₃ = (1 μF)(4 V) = 4 μC."
+          ],
+          "answer": "3 μF: 24 μC, 8 V. 5 μF: 20 μC, 4 V. 1 μF: 4 μC, 4 V."
+        }
+      },
+      {
+        "id": "capacitors-energy",
+        "title": "Stored energy, field energy & spacing changes",
+        "body": "A capacitor stores energy in its electric field; use any equivalent form of U = ½CΔV² depending on the known values. Network energy is the sum of the individual stored energies, equal to the equivalent capacitor’s energy across the same terminals. At fixed Q, increasing plate spacing reduces C and increases voltage and stored energy; at fixed voltage it reduces C, charge, field, and stored energy. In vacuum, the electric energy per unit volume is ½ε₀E².",
+        "formula": "U = ½CΔV² = Q²/(2C) = ½QΔV; u vacuum = ½ε₀E²",
+        "trap": "Check whether the battery remains attached before deciding whether Q or ΔV is fixed.",
+        "example": {
+          "question": "A 2.0 μF capacitor is charged to 12 V and disconnected. Its plate spacing is doubled. Find the new C, Q, voltage, and energy.",
+          "steps": [
+            "Initially Q = 24 μC and U = ½(2 μF)(12)² = 144 μJ.",
+            "Doubling d halves capacitance to 1.0 μF.",
+            "Disconnection keeps Q = 24 μC, so voltage rises to Q/C = 24 V.",
+            "U final = Q²/(2C final) = 288 μJ; the increase is supplied by the work separating the plates."
+          ],
+          "answer": "C = 1.0 μF; Q = 24 μC; ΔV = 24 V; U = 288 μJ. The ideal field stays constant because Q/A is unchanged."
+        }
+      },
+      {
+        "id": "capacitors-dielectric",
+        "title": "Dielectrics, fixed Q versus fixed voltage & breakdown",
+        "body": "A dielectric polarizes and increases capacitance to κC₀ when it completely fills the gap. For an isolated capacitor, Q stays fixed while voltage, field, and stored energy each decrease by factor κ. With a battery attached and spacing unchanged, voltage and E = ΔV/d stay fixed while Q and stored energy increase by factor κ. Dielectric strength is the maximum field before breakdown, giving |ΔV|max ≈ E breakdown d for a uniform gap.",
+        "formula": "Isolated: C × κ, Q fixed, V/E/U ÷ κ. Battery: C/Q/U × κ, V/E fixed.",
+        "trap": "At fixed battery voltage, the field does not fall when a dielectric is inserted; added free plate charge offsets the polarization field.",
+        "example": {
+          "question": "A 2.0 μF capacitor initially at 12 V receives a full-gap dielectric with κ = 3. Compare isolated and battery-connected outcomes.",
+          "steps": [
+            "Initial Q₀ = 24 μC and U₀ = 144 μJ; new C = 6.0 μF in both cases.",
+            "Isolated: Q stays 24 μC, voltage becomes 4.0 V, field becomes E₀/3, and U becomes 48 μJ.",
+            "Battery connected: voltage stays 12 V, field stays E₀, charge becomes 72 μC, and U becomes 432 μJ.",
+            "For a dielectric strength 3.0 × 10⁶ V/m and gap 0.50 mm, the ideal maximum voltage is (3.0 × 10⁶)(0.00050) = 1500 V."
+          ],
+          "answer": "Isolated: 6 μF, 24 μC, 4 V, 48 μJ. Battery: 6 μF, 72 μC, 12 V, 432 μJ. Always identify the fixed quantity first."
+        }
+      }
+    ]
+  }
+]
